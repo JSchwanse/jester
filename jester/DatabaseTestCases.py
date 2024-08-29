@@ -32,7 +32,7 @@ class DatabaseTestCases:
             # make db connection
             # db_config = DatabaseConfiguration('./../test-db-config.xml')
             db_config = DatabaseConfiguration(DatabaseTestCases.get_db_config_path())
-            db_connection = db_config.get_connection('shogi')
+            db_connection = db_config.get_connection('test')
             if db_connection is not None:
                 Runtime_Module.initialize(db_connection)
 
