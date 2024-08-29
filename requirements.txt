@@ -1,0 +1,1 @@
+j_core @ https://github.com/JSchwanse/j_core/releases/download/v0.0.1/J_Core-0.0.1-py3-none-any.whl
