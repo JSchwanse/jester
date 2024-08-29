@@ -1,4 +1,6 @@
 # exports
-from .Assertions import Assertions
-from .DatabaseTestCases import DatabaseTestCases
-from .Testdata import Testdata
+from . import *
+
+__all__ = ['Assertions', 'DatabaseTestCases', 'Testdata']
+
+__version__ = '0.0.1'

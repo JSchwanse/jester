@@ -11,7 +11,8 @@ class DatabaseTestCasesTest(unittest.TestCase):
         # Because a path can be specified with slashes or backslashes, we need to compare the resolved normpath
         resolved_db_config_file_path = pathlib.Path(DatabaseTestCases.get_db_config_path()).resolve()
         resolved_file_path_from_file = pathlib.Path(
-            os.path.dirname(os.path.abspath(__file__)) + '/../test-db-config.xml').resolve()
+            f'{os.path.dirname(os.path.abspath(__file__))}/../test-db-config.xml'
+        ).resolve()
         self.assertEqual(os.path.normcase(resolved_file_path_from_file), os.path.normcase(resolved_db_config_file_path))
 
 
